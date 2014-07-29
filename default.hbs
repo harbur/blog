@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+    <link href="http://harbur.io/assets/css/template.css" rel="stylesheet">
+    <link href="http://harbur.io/assets/css/override.css" rel="stylesheet">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div id="page">
+      <header id="header" class="site-header">
+        <nav id="navbar" class="site-navbar navbar navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+              </button>
+              
+              <a href="http://harbur.io"><h1 class="navbar-brand"><img src="http://harbur.io/assets/imgs/logo.png" height="40"></img></h1></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="navigation" class="nav navbar-nav navbar-right">
+                <li><a href="http://harbur.io/#header">Home</a></li>
+                <li><a href="http://harbur.io/#applications">Applications</a></li>
+                <li><a href="http://harbur.io/#features">Features</a></li>
+                <li class="active"><a href="http://blog.harbur.io/" class="current">Blog</a></li>
+                <!-- <li><a href="#pricing">Pricing</a></li> -->
+                <!-- <li><a href="#signup"><b>Sign up</b></a></li> -->
+                <!-- <li><a href="#login">Login</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+</div>
+<br/><br/>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+</body>
+</html>
