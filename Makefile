@@ -1,5 +1,5 @@
 build:
-	docker build -t registry.alm.io:5000/harbur/blog .
+	docker build -t harbur/blog .
 
 push:
-	docker push registry.alm.io:5000/harbur/blog
+	docker push harbur/blog
