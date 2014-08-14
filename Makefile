@@ -3,3 +3,4 @@ build:
 
 push:
 	docker push harbur/blog
+
