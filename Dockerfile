@@ -1,3 +1,3 @@
 FROM orchardup/ghost
 VOLUME /opt/ghost/content/images
-ADD default.hbs /opt/ghost/content/themes/casper/default.hbs
+ADD index.hbs /opt/ghost/content/themes/casper/index.hbs
