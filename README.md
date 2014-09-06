@@ -15,7 +15,7 @@ make push
 To launch the Blog on production:
 
 ```
-docker run -d -p 2368:2368 -e GHOST_URL=http://blog.harbur.io harbur/blog
+docker run -d -p 2368:2368 -e GHOST_URL=https://blog.harbur.io harbur/blog
 ```
 
 The Blog database is located inside a volume at /data directory.
